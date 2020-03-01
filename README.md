@@ -1,2 +1,2 @@
 # Lanit Chat
-#### Messenger app
+#### _Messenger app_
