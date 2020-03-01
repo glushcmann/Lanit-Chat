@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1106A04C2407EC6C007D4E12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106A04B2407EC6C007D4E12 /* AppDelegate.swift */; };
-		1106A04E2407EC6C007D4E12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106A04D2407EC6C007D4E12 /* SceneDelegate.swift */; };
 		1106A0502407EC6C007D4E12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106A04F2407EC6C007D4E12 /* ViewController.swift */; };
 		1106A0532407EC6C007D4E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1106A0512407EC6C007D4E12 /* Main.storyboard */; };
 		1106A0552407EC70007D4E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1106A0542407EC70007D4E12 /* Assets.xcassets */; };
@@ -16,9 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1106A0482407EC6C007D4E12 /* Lanit Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lanit Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1106A0482407EC6C007D4E12 /* Lanit Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lanit Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1106A04B2407EC6C007D4E12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1106A04D2407EC6C007D4E12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1106A04F2407EC6C007D4E12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1106A0522407EC6C007D4E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1106A0542407EC70007D4E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +46,7 @@
 		1106A0492407EC6C007D4E12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1106A0482407EC6C007D4E12 /* Lanit Chat.app */,
+				1106A0482407EC6C007D4E12 /* Lanit Messenger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				1106A04B2407EC6C007D4E12 /* AppDelegate.swift */,
-				1106A04D2407EC6C007D4E12 /* SceneDelegate.swift */,
 				1106A04F2407EC6C007D4E12 /* ViewController.swift */,
 				1106A0512407EC6C007D4E12 /* Main.storyboard */,
 				1106A0542407EC70007D4E12 /* Assets.xcassets */,
@@ -84,7 +81,7 @@
 			);
 			name = "Lanit Chat";
 			productName = "Lanit Chat";
-			productReference = 1106A0482407EC6C007D4E12 /* Lanit Chat.app */;
+			productReference = 1106A0482407EC6C007D4E12 /* Lanit Messenger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +137,6 @@
 			files = (
 				1106A0502407EC6C007D4E12 /* ViewController.swift in Sources */,
 				1106A04C2407EC6C007D4E12 /* AppDelegate.swift in Sources */,
-				1106A04E2407EC6C007D4E12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +287,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "glushchenko.nikita.Lanit-Chat";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "glushchenko.nikita.Lanit-Messenger";
+				PRODUCT_NAME = "Lanit Messenger";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,10 +305,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "glushchenko.nikita.Lanit-Chat";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "glushchenko.nikita.Lanit-Messenger";
+				PRODUCT_NAME = "Lanit Messenger";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
