@@ -14,15 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print("Controller method: \(#function)")
+        print("Controller moving from 'Disappeared' to 'Appearing': \(#function)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("Controller method: \(#function)")
+        print("Controller moved from 'Disappeared' or 'Disappearing' to 'Appearing': \(#function)")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("Controller method: \(#function)")
+        print("Controller moved from 'Appearing' to 'Appeared': \(#function)")
     }
     
     override func viewWillLayoutSubviews() {
@@ -34,11 +34,11 @@ class ViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        print("Controller method: \(#function)")
+        print("Controller moved from 'Appearing' or 'Appeared' to 'Disappearing': \(#function)")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        print("Controller method: \(#function)")
+        print("Controller moved from 'Disappearing' to 'Disappeared': \(#function)")
     }
 }
 
