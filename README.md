@@ -1,2 +1,2 @@
-# Lanit-Chat
-### Messenger app
+# Lanit Chat
+#### Messenger app
