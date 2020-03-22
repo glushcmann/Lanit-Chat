@@ -22,5 +22,7 @@ class ProfileViewController: UIViewController {
         view.addSubview(photoButton)
         view.addSubview(profileInfo)
         view.addSubview(editButton)
+        
+        view.layer.backgroundColor = #colorLiteral(red: 0.2470588235, green: 0.4705882353, blue: 0.9411764706, alpha: 1)
     }
 }
