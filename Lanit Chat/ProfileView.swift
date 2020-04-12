@@ -86,7 +86,7 @@ class ProfileView: UIView {
             profilePhotoButton.trailingAnchor.constraint(equalTo: profilePhoto.trailingAnchor),
             profilePhotoButton.bottomAnchor.constraint(equalTo: profilePhoto.bottomAnchor),
             profilePhotoButton.heightAnchor.constraint(equalToConstant: 50),
-            profilePhotoButton.widthAnchor.constraint(equalTo: profilePhotoButton.heightAnchor),
+            profilePhotoButton.widthAnchor.constraint(equalToConstant: 50),
             
             profileName.topAnchor.constraint(equalTo: profilePhoto.bottomAnchor, constant: 30),
             profileName.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
