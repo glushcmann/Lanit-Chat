@@ -104,7 +104,7 @@ class ProfileView: UIView {
             editButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -10),
         ])
         
-        print("frame кнопки редактировать: \(editButton.frame)")
+        print("frame кнопки редактировать в init: \(editButton.frame)")
     }
     
     convenience init () {
