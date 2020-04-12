@@ -38,6 +38,7 @@ class ProfileView: UIView {
         profileName.text = "Dmitry Yakovlev"
         profileName.textAlignment = .left
         profileName.font = .boldSystemFont(ofSize: 25)
+        profileName.textColor = .black
         profileName.translatesAutoresizingMaskIntoConstraints = false
         return profileName
         }()
@@ -47,6 +48,8 @@ class ProfileView: UIView {
         profileInfo.text = "Likes IOS Development and music."
         profileInfo.font = UIFont.systemFont(ofSize: 15)
         profileInfo.isEditable = false
+        profileInfo.backgroundColor = .white
+        profileInfo.textColor = .black
         profileInfo.translatesAutoresizingMaskIntoConstraints = false
         return profileInfo
     }()
