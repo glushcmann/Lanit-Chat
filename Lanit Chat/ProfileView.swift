@@ -23,7 +23,6 @@ class ProfileView: UIView {
     let profilePhotoButton: UIImageView = {
         let profilePhotoButton = UIImageView()
         profilePhotoButton.contentMode = .scaleAspectFill
-//        profilePhotoButton.image = UIImage(systemName: "camera.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 16, weight: .regular, scale: .medium))?.withTintColor(.black)
         profilePhotoButton.image = UIImage(named: "slr-camera-2-xxl.png")
         profilePhotoButton.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         profilePhotoButton.layer.cornerRadius = 25
@@ -114,4 +113,3 @@ class ProfileView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
