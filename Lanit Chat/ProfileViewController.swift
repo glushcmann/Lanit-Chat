@@ -14,7 +14,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
     
     func showAlertButtonTapped(_ sender: UIImageView) {
         let alert = UIAlertController(title: "Выберите фото", message: "Message", preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "Установить из галлереи", style: .default, handler: { (alert:UIAlertAction!) -> Void in
+        alert.addAction(UIAlertAction(title: "Установить из галлереи", style: .default, handler: { (alert:UIAlertAction) -> Void in
             var pickedImage = false
 
             if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) && !pickedImage {
@@ -32,10 +32,10 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
             func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
                 let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
                 self.profileView.profilePhoto.image = image
-                self.dismiss(animated: true, completion: nil)
+                picker.dismiss(animated: true, completion: nil)
             }
         }))
-        alert.addAction(UIAlertAction(title: "Сделать фото", style: .default, handler: { (alert:UIAlertAction!) -> Void in
+        alert.addAction(UIAlertAction(title: "Сделать фото", style: .default, handler: { (alert:UIAlertAction) -> Void in
             
              var pickedImage = false
             
@@ -78,4 +78,3 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         print("frame кнопки редактировать в viewDidAppear: \(profileView.editButton.frame)")
     }
 }
-

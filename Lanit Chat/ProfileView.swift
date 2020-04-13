@@ -14,7 +14,7 @@ class ProfileView: UIView {
         let profilePhoto = UIImageView()
         profilePhoto.image = UIImage(named: "placeholder-user.png")
         profilePhoto.layer.borderWidth = 1
-        profilePhoto.layer.cornerRadius = 25
+        profilePhoto.layer.cornerRadius = 30
         profilePhoto.clipsToBounds = true
         profilePhoto.translatesAutoresizingMaskIntoConstraints = false
         return profilePhoto
@@ -25,9 +25,10 @@ class ProfileView: UIView {
         profilePhotoButton.contentMode = .scaleAspectFill
         profilePhotoButton.image = UIImage(named: "slr-camera-2-xxl.png")
         profilePhotoButton.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        profilePhotoButton.layer.cornerRadius = 25
+        profilePhotoButton.layer.cornerRadius = 30
         profilePhotoButton.clipsToBounds = true
         profilePhotoButton.layer.borderWidth = 1
+        profilePhotoButton.backgroundColor = .blue
         profilePhotoButton.translatesAutoresizingMaskIntoConstraints = false
         return profilePhotoButton
     }()
@@ -85,8 +86,8 @@ class ProfileView: UIView {
             //TODO: 
             profilePhotoButton.trailingAnchor.constraint(equalTo: profilePhoto.trailingAnchor),
             profilePhotoButton.bottomAnchor.constraint(equalTo: profilePhoto.bottomAnchor),
-            profilePhotoButton.heightAnchor.constraint(equalToConstant: 50),
-            profilePhotoButton.widthAnchor.constraint(equalToConstant: 50),
+            profilePhotoButton.heightAnchor.constraint(equalToConstant: 60),
+            profilePhotoButton.widthAnchor.constraint(equalTo: profilePhotoButton.heightAnchor),
             
             profileName.topAnchor.constraint(equalTo: profilePhoto.bottomAnchor, constant: 30),
             profileName.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
